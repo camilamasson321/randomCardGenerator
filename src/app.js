@@ -30,12 +30,7 @@ window.onload = function() {
   document.querySelector(".bottomSuit").innerHTML = randomSuit;
 };
 
-// const isRed = suit[("♦", "♥")];
-if (suit[("♦", "♥")]) {
-  document.getElementById("mySuit").style.color = "red";
-}
-
-// if (redSuit) {
-//   var col = document.getElementById("mySuit");
-//   col.style.color = "red";
-// document.getElementById("mySuit").style.color = "red";
+if ((randomSuit === suit[0]) | (randomSuit === suit[1])) {
+  document.querySelector(".topSuit").style.color = "red";
+  document.querySelector(".bottomSuit").style.color = "red";
+} else document.querySelector(".card").style.color = "black";
