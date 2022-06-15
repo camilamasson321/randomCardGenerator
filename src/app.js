@@ -30,7 +30,12 @@ window.onload = function() {
   document.querySelector(".bottomSuit").innerHTML = randomSuit;
 };
 
-let changeColor = suit[(0, 1)];
-if (changeColor) {
-  document.getElementById(changeColor).style.color = `red`;
+// const isRed = suit[("♦", "♥")];
+if (suit[("♦", "♥")]) {
+  document.getElementById("mySuit").style.color = "red";
 }
+
+// if (redSuit) {
+//   var col = document.getElementById("mySuit");
+//   col.style.color = "red";
+// document.getElementById("mySuit").style.color = "red";
